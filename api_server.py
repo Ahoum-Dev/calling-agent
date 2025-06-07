@@ -226,7 +226,7 @@ if __name__ == '__main__':
         logger.error("LiveKit CLI not found. Please install it first.")
         exit(1)
     
-    port = int(os.getenv('API_PORT', 5000))
+    port = int(os.getenv('API_PORT'))
     debug_mode = os.getenv('DEBUG', 'False').lower() == 'true'
     
     logger.info(f"Starting Ahoum Facilitator Onboarding API on port {port}")
