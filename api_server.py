@@ -13,7 +13,7 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv(dotenv_path=".env.local")
+load_dotenv(dotenv_path=".env")
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes

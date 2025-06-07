@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: outbound-agent-api
     env_file:
-      - .env.local
+      - .env
     ports:
       - "5002:5002"
     restart: unless-stopped
@@ -18,6 +18,6 @@ services:
       dockerfile: Dockerfile
     container_name: outbound-agent-worker
     env_file:
-      - .env.local
+      - .env
     command: ["python", "agent.py", "dev"]
     restart: unless-stopped 

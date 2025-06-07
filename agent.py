@@ -21,7 +21,7 @@ from livekit.plugins import (silero, deepgram, openai)
 
 
 # load environment variables
-load_dotenv(dotenv_path=".env.local")
+load_dotenv(dotenv_path=".env")
 logger = logging.getLogger("ahoum-facilitator-onboarding")
 logger.setLevel(logging.INFO)
 
